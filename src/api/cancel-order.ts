@@ -7,3 +7,15 @@ export interface CancelOrderParams {
 export async function cancelOrder({ orderId }: CancelOrderParams) {
   await api.patch(`/orders/${orderId}/cancel`)
 }
+
+// import { api } from '@/lib/axios'
+
+// export interface CancelOrderParams {
+//   orderId: string
+// }
+
+// export async function cancelOrder({ orderId }: CancelOrderParams) {
+//   await api.patch(`/orders/${orderId}`, {
+//     status: 'canceled',
+//   })
+// }
