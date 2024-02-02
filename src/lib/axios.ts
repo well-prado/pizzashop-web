@@ -7,7 +7,8 @@ export const api = axios.create({
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin': 'https://www.globaldesk.com.br',
+    'Access-Control-Allow-Credentials': 'true',
   },
 })
 
