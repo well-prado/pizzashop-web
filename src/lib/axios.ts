@@ -5,6 +5,10 @@ import { env } from '@/env'
 export const api = axios.create({
   baseURL: env.VITE_API_URL,
   withCredentials: true,
+  headers: {
+    'Content-Type': 'application/json',
+    'Access-Control-Allow-Origin': '*',
+  },
 })
 
 if (env.VITE_ENABLE_API_DELAY) {
